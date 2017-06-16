@@ -3,3 +3,5 @@ development:
   mail_from_address: hello@sulmanbaig.com
   confirm_success_url: http://localhost:3000
   password_reset_url: http://localhost:3000
+  user_type_general: 0
+  user_type_admin: 1
