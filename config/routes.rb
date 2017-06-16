@@ -9,6 +9,14 @@ Rails.application.routes.draw do
         token_validations: 'overrides/token_validations',
         passwords: 'overrides/passwords'
       }
+
+    # users paths
+    resources :users, only: [:index, :destroy] do
+      member do
+        # change role
+        put :update_role
+      end
+    end
   end
 
 end
