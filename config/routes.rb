@@ -1,5 +1,8 @@
 Rails.application.routes.draw do
 
+  match "/404", :to => "errors#not_found", :via => :all
+  match "/500", :to => "errors#internal_server_error", :via => :all
+
   scope :api, defaults: {format: 'json'} do
     # user auths
     mount_devise_token_auth_for 'User', at: 'auth', skip: [:omniauth_callbacks],

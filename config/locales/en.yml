@@ -1,4 +1,6 @@
 en:
+  not_found: 'Page you request could not be found. Please try some other page.'
+  internal_server_error: 'There is some internal server error.'
   pundit:
     default: 'You are not authorized to perform this action.'
     user_policy:

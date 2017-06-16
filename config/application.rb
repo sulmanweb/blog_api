@@ -40,6 +40,7 @@ module MsbBlog
       end
     end
     config.constants = config_for(:constants)
+    config.exceptions_app = self.routes
     # config.time_zone = "Abu Dhabi"
   end
 end
