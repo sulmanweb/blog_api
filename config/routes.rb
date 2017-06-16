@@ -20,6 +20,14 @@ Rails.application.routes.draw do
         put :update_role
       end
     end
+
+    # Articles
+    resources :articles do
+      member do
+        # Change status
+        put :change_status
+      end
+    end
   end
 
 end
