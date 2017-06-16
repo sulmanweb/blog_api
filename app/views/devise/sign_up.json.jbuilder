@@ -1,5 +1,3 @@
 json.user do
-  json.id @resource.id
-
-  json.email @resource.email
+  json.partial! 'users/user', user: @resource
 end

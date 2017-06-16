@@ -26,7 +26,7 @@ module Overrides
 
     def render_destroy_success
       render json: {
-        message: 'User is logged off successfully'
+        message: I18n.t("devise_token_auth.log_off_success")
       }, status: 200
     end
 

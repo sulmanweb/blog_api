@@ -37,7 +37,7 @@ module Overrides
 
     def render_update_error_unauthorized
       render json: {
-        errors: ['Unauthorized']
+        errors: [I18n.t("devise_token_auth.unauthorized")]
       }, status: 401
     end
 
