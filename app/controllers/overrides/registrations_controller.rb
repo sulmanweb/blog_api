@@ -1,5 +1,10 @@
 module Overrides
   class RegistrationsController < DeviseTokenAuth::RegistrationsController
+    def create
+      super do |resource|
+        resource.update(user_type: Rails.configuration.constants['user_type_general'])
+      end
+    end
     protected
 
         def render_create_error_missing_confirm_success_url
