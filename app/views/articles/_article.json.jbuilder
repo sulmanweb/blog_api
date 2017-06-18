@@ -1,4 +1,4 @@
-json.extract! article, :id, :title, :content, :status, :editor, :created_at
+json.extract! article, :id, :title, :content, :status, :editor, :slug, :created_at
 
 unless article.user.nil?
   json.user do

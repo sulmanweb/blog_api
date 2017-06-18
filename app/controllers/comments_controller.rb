@@ -19,7 +19,7 @@ class CommentsController < ApplicationController
 
   private
   def set_article
-    @article = Article.for_general_users.find(params[:article_id])
+    @article = Article.for_general_users.friendly.find(params[:article_id])
   end
 
   def comment_create_params
