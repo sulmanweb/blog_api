@@ -27,6 +27,9 @@ Rails.application.routes.draw do
         # Change status
         put :change_status
       end
+
+      # comments
+      resources :comments, only: [:index, :create]
     end
   end
 

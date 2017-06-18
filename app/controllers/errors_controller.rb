@@ -4,6 +4,6 @@ class ErrorsController < ApplicationController
   end
 
   def internal_server_error
-    render status: :not_found, json: {errors: [I18n.t('internal_server_error')]}
+    render status: :internal_server_error, json: {errors: [I18n.t('internal_server_error')]}
   end
 end
