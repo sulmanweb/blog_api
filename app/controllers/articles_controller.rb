@@ -64,9 +64,9 @@ class ArticlesController < ApplicationController
     # Use callbacks to share common setup or constraints between actions.
     def set_article
       if user_signed_in?
-        @article = Article.find(params[:id])
+        @article = Article.friendly.find(params[:id])
       else
-        @article = Article.for_general_users.find(params[:id])
+        @article = Article.for_general_users.friendly.find(params[:id])
       end
     end
 

@@ -20,6 +20,8 @@ gem 'rack-cors', '0.4.1'
 gem 'devise_token_auth', '0.1.42'
 #  For authorizations
 gem 'pundit', '1.1.0'
+# For nice urls
+gem 'friendly_id', '5.2.1'
 
 group :development do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
